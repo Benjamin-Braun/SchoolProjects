@@ -1,0 +1,13 @@
+html {
+    background-color: darkslategray;
+}
+
+p, h1, h2, h3, h4, b {
+    color: white;
+}
+
+div {
+    background-color: darkblue;
+    border-color: blue;
+    border-width: 5px;
+}
