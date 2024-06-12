@@ -4,8 +4,6 @@ Ein Spiel für eine Projektpräsentation in der Schule.
 
 The Game is made using <a href="https://pixijs.com/">PixiJS</a>, therefore it is Web-based.
 
-You can play it <a href="https://mad-mushroom.github.io/DerPhysikus/game/">here</a>.
-
 ## HOW TO: Open Game in iPad "mode" on Firefox
 
 **This only works in Firefox!**
