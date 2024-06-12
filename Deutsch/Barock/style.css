@@ -1,5 +1,5 @@
 html {
-    background-color: darkslategray;
+    background-color: #202020;
 }
 
 p, h1, h2, h3, h4, b {
@@ -7,7 +7,33 @@ p, h1, h2, h3, h4, b {
 }
 
 div {
-    background-color: darkblue;
-    border-color: blue;
+    background-color: darkred;
+    border-color: red;
     border-width: 5px;
+    padding: 1px;
+}
+
+#main-container {
+	text-align: center;
+}
+
+#poleContainer {
+	width: 100%;
+}
+
+.pole {
+	width: 25%;
+	margin-left: -2px;
+	float: left;
+}
+
+#lowerBar {
+	float: left;
+	width: 100%;
+	margin-left: -1px;
+}
+
+footer {
+	text-align: center;
+	float: inline-start;
 }
