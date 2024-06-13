@@ -13,6 +13,14 @@ div {
     padding: 1px;
 }
 
+div:hover {
+	background-color: black;
+}
+
+#poleContainer:hover {
+	background-color: darkred;
+}
+
 #main-container {
 	text-align: center;
 }
