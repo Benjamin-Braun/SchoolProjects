@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<title>Informationen zum Barock</title>
-	<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<header>
 			<h1>Die Epoche "Barock"</h1>
+			<button onclick="help()">HELP ME!</button>
 		</header>
 		<div id="main-container">
 			<div id="headingBar" onclick="headingBar()">
@@ -15,23 +16,38 @@
 			<div id="poleContainer">
 				<div id="pole1" class="pole" onclick="pole1()">
 					<h2>Bekannte Vertreter</h2>
-					<p>Johan Valentin Andreae (1586-1654)</p>
-					<p>Jakob Bidermann (1578-1639)</p>
-					<p>Sigmund von Birken (1626-1686)</p>
-					<p>Jakob Böhme (1575-1624)</p>
-					<p>Anton Ulrich von Braunschweig (1633-1714)</p>
-					<p>Paul Fleming (1609-1640)</p>
-					<p>Anna Rupertina Fuchs (1657-1722)</p>
-					<p>Paul Gerhardt (1607-1676</p>
+					<p>- Johan Valentin Andreae (1586-1654)</p>
+					<p>- Jakob Bidermann (1578-1639)</p>
+					<p>- Sigmund von Birken (1626-1686)</p>
+					<p>- Jakob Böhme (1575-1624)</p>
+					<p>- Anton Ulrich von Braunschweig (1633-1714)</p>
+					<p>- Paul Fleming (1609-1640)</p>
+					<p>- Anna Rupertina Fuchs (1657-1722)</p>
+					<p>- Paul Gerhardt (1607-1676</p>
+					<p>- Andreas Gryphius (1616-1664)</p>
 				</div>
 				<div id="pole2" class="pole" onclick="pole2()">
-					<p>Lorem ipsum und so...</p>
+					<h2>Literaturform</h2>
+					<p>Lyrikals ist die beliebteste Literaturform.</p>
+					<p>Viele weitere Textformen:</p><br>
+					<p>- epischer Roman</p>
+					<p>- der Schwank</p>
+					<p>- die Satire</p><br>
+					<p>Zu den literarischen zählen auch:</p>
+					<p>- Reiseberichte</p>
+					<p>- religiöse, journalistische und wirtschaftliche Schriften</p>
 				</div>
 				<div id="pole3" class="pole" onclick="pole3()">
-					<p>Lorem ipsum und so...</p>
+					<h2>Merkmale</h2>
+					<p>- geprägt von starken Gegensätzen z.B. stand dem armen Volk ein absolutistischer Staat mit großen Schlössern gegenüber</p>
+					<p>- Schloss als Zentrum aller Macht</p>
+					<p>- spiegelt sich in der Literatur wieder:</p>
+					<p>	- Autoren verwenden häufig Anithesen um Widersprüche (teils ernst, teils satirisch) gegenüberzustellen</p>
+					<p>- typisch galten auch Spott und Ironie</p>
+					<p>Lebenstil der Adeligen galt als unmoralisch und dieser wurde oft in der Literatur angegriffen</p>
 				</div>
 				<div id="pole4" class="pole" onclick="pole4()">
-					<p>Lorem ipsum und so...</p>
+					<h2>Beispielwerke</h2>
 				</div>
 			</div>
 			<div id="lowerBar" onclick="lowerBar()">
@@ -40,26 +56,37 @@
 		</div>
 		<script>
 			var ee = 0;
+			var normalHTML = document.getElementById("main-container").innerHTML;
 			function headingBar(){
 				ee += 1;
-				if(ee == 4){
-					document.getElementById("main-container").innerHTML = "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RwLNsvARAhw4hxAY5wl0Yn4ZNb1U6O-2HQ&s\">";	
+				document.getElementById("main-container").innerHTML = normalHTML;
+				if(ee == 13){
+					document.getElementById("main-container").innerHTML = "<<div id=\"headingBar\" onclick=\"headingBar()\"><h1>BAROCK</h1></div><img src=\"https://duckduckgo.com/i/e14a0b56608ea430.jpg\">";	
 				}
 			}
 			function pole1(){
-
+				normalHTML = document.getElementById("main-container").innerHTML;
+				document.getElementById("main-container").innerHTML = "<div id=\"headingBar\" onclick=\"headingBar()\"><h1>BAROCK</h1></div><div id=\"pole1\"><iframe src=\"pole1.html\"></div>";
 			}
 			function pole2(){
-
+				normalHTML = document.getElementById("main-container").innerHTML;
+				document.getElementById("main-container").innerHTML = "<div id=\"headingBar\" onclick=\"headingBar()\"><h1>BAROCK</h1></div><div id=\"pole1\"><iframe src=\"pole2.html\"></div>";
 			}
 			function pole3(){
-
+				normalHTML = document.getElementById("main-container").innerHTML;
+				document.getElementById("main-container").innerHTML = "<div id=\"headingBar\" onclick=\"headingBar()\"><h1>BAROCK</h1></div><div id=\"pole1\"><iframe src=\"pole3.html\"></div>";
 			}
 			function pole4(){
-
+				normalHTML = document.getElementById("main-container").innerHTML;
+				document.getElementById("main-container").innerHTML = "<div id=\"headingBar\" onclick=\"headingBar()\"><h1>BAROCK</h1></div><div id=\"pole1\"><iframe src=\"pole4.html\"></div>";
 			}
 			function lowerBar(){
-
+				normalHTML = document.getElementById("main-container").innerHTML;
+				document.getElementById("main-container").innerHTML = "<div id=\"headingBar\" onclick=\"headingBar()\"><h1>BAROCK</h1></div><div id=\"pole1\"><iframe src=\"lowerBar.html\"></div>";
+			}
+			function help(){
+				normalHTML = document.getElementById("main-container").innerHTML;
+				document.getElementById("main-container").innerHTML = "<div id=\"headingBar\" onclick=\"headingBar()\"><h1>BAROCK</h1></div><div id=\"pole1\"><iframe src=\"help.html\"></div>";
 			}
 		</script>
 	</body>

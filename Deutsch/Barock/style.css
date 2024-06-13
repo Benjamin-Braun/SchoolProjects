@@ -17,6 +17,12 @@ div:hover {
 	background-color: black;
 }
 
+iframe {
+	background-color: darkred;
+	border: none;
+	width: 100%
+}
+
 #poleContainer:hover {
 	background-color: darkred;
 }
@@ -39,6 +45,11 @@ div:hover {
 	float: left;
 	width: 100%;
 	margin-left: -1px;
+}
+
+button {
+	float: right;
+	margin-top: -5.5%;
 }
 
 footer {
